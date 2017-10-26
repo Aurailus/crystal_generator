@@ -1,5 +1,10 @@
-print("I am power crystal generators!")
+crystal_generator = {}
 
-dofile(minetest.get_modpath("crystal_generator") .. "/blocks.lua")
-dofile(minetest.get_modpath("crystal_generator") .. "/crystal_damage.lua")
-dofile(minetest.get_modpath("crystal_generator") .. "/recipes.lua")
+local path = minetest.get_modpath("crystal_generator")
+
+dofile(path .. "/craftitems.lua")
+dofile(path .. "/crafting.lua")
+dofile(path .. "/scripts.lua")
+dofile(path .. "/nodes.lua")
+dofile(path .. "/radiation.lua")
+dofile(path .. "/override_drops.lua")
